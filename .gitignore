@@ -1,0 +1,5 @@
+# raw API pulls are not published (they contain AIM titles and summaries)
+data/raw/
+__pycache__/
+.venv/
+*.pyc
