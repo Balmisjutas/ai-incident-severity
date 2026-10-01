@@ -2,7 +2,8 @@
 
 We publish only: event id, date, country code, AIM label (incident or hazard),
 number of articles, languages, harm types, autonomy level, whether the
-severity field is filled, and a rough "mentions agents" flag. No titles,
+severity field is filled, a rough "mentions agents" flag, and the AI Incident
+Database ids that AIM links to the event. No titles,
 summaries or article text go into the table.
 
 The agent flag is a keyword rule on title and summary. It is rough on
@@ -26,7 +27,7 @@ AGENT_RE = re.compile(r"\b(ai agents?|agentic|autonomous agents?|agents?)\b", re
 FIELDS = [
     "id", "date", "country_code", "aim_label", "n_articles", "languages",
     "n_languages", "harm_types", "autonomy_level", "severity_filled",
-    "agent_mention",
+    "agent_mention", "aiid_ids",
 ]
 
 
@@ -61,6 +62,9 @@ def rows():
                 "autonomy_level": props.get("autonomy_level") or "",
                 "severity_filled": int(bool(props.get("most_severe_harm"))),
                 "agent_mention": int(bool(AGENT_RE.search(text))),
+                # link to the AI Incident Database: groups AIM events that
+                # are news fragments of the same real incident
+                "aiid_ids": ";".join(str(i) for i in (ev.get("aiid_ids") or [])),
             }
 
 

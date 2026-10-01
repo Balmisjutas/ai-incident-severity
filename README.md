@@ -25,6 +25,18 @@ In the public AIM data, the field `most_severe_harm` is empty for all 5,309
 events from January to September 2026 (see `results/descriptives.md`). So we
 ask: if we want to fill it, how consistently can it be done from what AIM holds?
 
+AIM also splits one real incident into several news events. In the same
+period, 47 AI Incident Database incidents are spread over 159 AIM events (one
+incident alone has 26). The OECD defines an incident as an "event,
+circumstance or series of events" (2024, p. 11). So we also ask whether the
+rung changes with which fragment is coded.
+
+## Related work
+
+CSET (AI Incident Database annotations) and the MIT AI Incident Tracker have
+coded severity before. Neither publishes agreement figures that I could find.
+This project uses the OECD ladder, AIM data, and reports agreement openly.
+
 ## Plan
 
 1. Codebook: turn the OECD definitions into written decision rules (`codebook/`).
@@ -49,6 +61,7 @@ that AIM is right or wrong.
 - [x] `src/build_table.py`: keeps only derived fields in `data/events.csv`.
 - [x] `src/descriptives.py`: first numbers in `results/descriptives.md`.
 - [x] `codebook/codebook-v0.md`: first draft of the rules.
+- [x] AI Incident Database links (`aiid_ids`) in the table, to group fragments of the same incident.
 - [ ] Sample and hand-coding.
 - [ ] Classifier and checker agents.
 - [ ] Agreement statistics and the note.
