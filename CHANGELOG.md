@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-01 (3)
+- Codebook: severity factors (scale, scope, irremediability) from the OECD
+  Due Diligence Guidance for Responsible AI (2026).
+
 ## 2026-10-01 (2)
 - Added `aiid_ids` to the derived table: 261 events link to 190 AI Incident
   Database incidents; 47 incidents are split over 159 AIM events.

@@ -37,6 +37,10 @@ CSET (AI Incident Database annotations) and the MIT AI Incident Tracker have
 coded severity before. Neither publishes agreement figures that I could find.
 This project uses the OECD ladder, AIM data, and reports agreement openly.
 
+The OECD Due Diligence Guidance for Responsible AI (2026) gives a way to judge
+severity: "scale, scope and irremediable character". The codebook uses these
+three factors next to the rung.
+
 ## Plan
 
 1. Codebook: turn the OECD definitions into written decision rules (`codebook/`).

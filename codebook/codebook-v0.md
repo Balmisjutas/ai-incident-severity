@@ -45,6 +45,22 @@ Step 3. Which plausible rung?
 - Serious hazard: the plausible harm, if it happened, would be a serious incident by Step 2.
 - Otherwise: hazard.
 
+## Severity factors (from the 2026 due diligence guidance)
+
+The OECD Due Diligence Guidance for Responsible AI (February 2026, Table 2.3)
+says: "Severity of impacts will be judged by their scale, scope and
+irremediable character", and "Severity is not an absolute concept and it is
+context specific." So, besides the rung, the coder also gives each factor:
+
+- Scale (how grave the harm is): low / medium / high / unclear.
+- Scope (how many people or how wide): one person / a group / many people or a whole sector / unclear.
+- Irremediability (can it be undone?): yes, easily / partly / no / unclear.
+
+This lets us test one thing: does a rung built from the three factors agree
+better between coders than one overall rung? The factors come from OECD
+business guidance, not from the incident papers, so using them for incidents
+is our own choice.
+
 ## Extra fields (from the 2025 framework)
 
 - Multiple AI systems interacting (criterion 24): yes / no / unclear.
