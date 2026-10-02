@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-02
+- Correction: the 47 split incidents cover 135 distinct AIM events, not 159
+  (159 counted incident-event links; 23 events link to several incidents).
+
 ## 2026-10-01 (3)
 - Codebook: severity factors (scale, scope, irremediability) from the OECD
   Due Diligence Guidance for Responsible AI (2026).

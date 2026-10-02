@@ -26,7 +26,7 @@ events from January to September 2026 (see `results/descriptives.md`). So we
 ask: if we want to fill it, how consistently can it be done from what AIM holds?
 
 AIM also splits one real incident into several news events. In the same
-period, 47 AI Incident Database incidents are spread over 159 AIM events (one
+period, 47 AI Incident Database incidents are spread over 135 AIM events (one
 incident alone has 26). The OECD defines an incident as an "event,
 circumstance or series of events" (2024, p. 11). So we also ask whether the
 rung changes with which fragment is coded.
