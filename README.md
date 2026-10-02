@@ -1,6 +1,10 @@
 # How severe? AI incidents on the OECD severity ladder
 
-**Status: work in progress (started October 2026).**
+**Status: planned, a later project (data pipeline and first rules exist).**
+
+The counting checks that came out of this data are now their own project:
+github.com/Balmisjutas/ai-agent-incidents. This repository keeps the harder
+question, which needs validation.
 
 This project tests if news-reported AI incidents can be placed, in a reliable
 way, on the five-level severity ladder that the OECD proposes: hazard, serious
@@ -40,6 +44,15 @@ This project uses the OECD ladder, AIM data, and reports agreement openly.
 The OECD Due Diligence Guidance for Responsible AI (2026) gives a way to judge
 severity: "scale, scope and irremediable character". The codebook uses these
 three factors next to the rung.
+
+## The centre of this project: validation with few human labels
+
+Language models make labels cheap, but the labels can be biased. So the plan
+is not to hand-code everything. It is to combine many machine labels with a
+small random sample checked by hand (about 100 events), and to use the
+difference between the two on that sample to correct the estimate from the
+machine labels. This idea is known as prediction-powered inference. It gives
+honest intervals, and the human sample stays valid when the model changes.
 
 ## Plan
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-02 (2)
+- Status changed to a later project. The counting checks moved to their own
+  repository (ai-agent-incidents). Validation with a small human sample is
+  now the centre of the plan.
+
 ## 2026-10-02
 - Correction: the 47 split incidents cover 135 distinct AIM events, not 159
   (159 counted incident-event links; 23 events link to several incidents).
